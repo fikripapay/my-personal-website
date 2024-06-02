@@ -4,7 +4,8 @@
   "description": "This is my personal website project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "runtailwind": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/styles.css --watch",
+    "finalcss": "npx tailwindcss -o ./public/css/final.css --minify"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fikripapay/my-personal-website/issues"
   },
-  "homepage": "https://github.com/fikripapay/my-personal-website#readme"
+  "homepage": "https://github.com/fikripapay/my-personal-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }
