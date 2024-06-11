@@ -22,14 +22,84 @@
   </head>
   <body>
     <!-- Header Start-->
-    <header>
-      <!-- Navbar Start -->
-      <nav id="navbar">
-        <div class="container fixed text-center bg-green-300 border">
-          <div>Navbar.</div>
+    <header
+      class="absolute top-0 z-10 flex items-center w-full bg-transparent lg:w-4/5 lg:left-1/2 lg:-translate-x-1/2"
+    >
+      <div
+        class="container relative flex items-center justify-between px-4 py-3"
+      >
+        <div class="flex items-center">
+          <div class="text-xl font-semibold font-radley md:text-2xl">
+            Abdul Fikri
+          </div>
+          <div>
+            <img
+              src="src/icon/verified.png"
+              alt="verified"
+              class="w-[14px] md:w-4 ms-1"
+            />
+          </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
+        <div class="flex items-center lg:w-3/4">
+          <button id="hambuger" type="button" class="lg:hidden">
+            <span
+              class="transition duration-300 ease-in-out origin-top-left hamburger-line"
+            ></span>
+            <span
+              class="transition duration-300 ease-in-out hamburger-line"
+            ></span>
+            <span
+              class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"
+            ></span>
+          </button>
+
+          <nav
+            id="nav-menu"
+            class="absolute left-0 w-full transition duration-700 ease-in-out origin-top-right scale-0 bg-white h-lvh lg:scale-100 top-full lg:h-auto lg:static lg:bg-transparent"
+          >
+            <ul
+              class="flex flex-col items-center justify-between w-full h-full py-5 bg-red-100 lg:items-start"
+            >
+              <li class="group">
+                <a href="#home" class="font-semibold group-hover:text-primary"
+                  >Home</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#aboutme"
+                  class="font-semibold group-hover:text-primary"
+                  >About</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#projects"
+                  class="font-semibold group-hover:text-primary"
+                  >Projects</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#experience"
+                  class="font-semibold group-hover:text-primary"
+                  >Experience</a
+                >
+              </li>
+              <li class="group">
+                <a href="#blog" class="font-semibold group-hover:text-primary"
+                  >Blog</a
+                >
+              </li>
+              <li class="group">
+                <a href="#home" class="font-semibold group-hover:text-primary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <!-- Header End -->
 
@@ -37,29 +107,32 @@
     <main>
       <section id="home">
         <div
-          class="container flex flex-col justify-center min-h-screen md:h-auto md:items-start"
+          class="container flex flex-wrap pt-20 md:pt-28 md:items-start md:justify-start lg:flex-row-reverse lg:pt-0 md:h-auto lg:items-center lg:w-4/5"
         >
-          <div>
-            <img src="src/img/profile.svg" alt="Profile" class="w-40 mx-auto" />
+          <div
+            class="relative w-full after:absolute after:w-full after:bottom-0 after:h-6 after:bg-gradient-to-t after:from-white lg:mt-20 lg:flex lg:justify-end"
+          >
+            <img
+              src="src/img/profile.svg"
+              alt="Profile"
+              class="w-40 mx-auto lg:mx-0 md:w-56 lg:w-72"
+            />
           </div>
-          <div class="px-4 mt-8 text-center md:p-16">
+          <div
+            class="px-4 mt-4 text-center md:mt-12 md:px-0 lg:mt-20 lg:text-start"
+          >
             <h1
-              class="text-xl font-bold tracking-wide font-radley text-title md:text-4xl"
+              class="relative text-xl font-extrabold tracking-wide md:text-4xl before:absolute before:h-1/2 before:w-1/3 before:bg-gradient-to-r before:from-bgprimary before:to-transparent before:rounded before:bottom-0 before:opacity-70 before:-rotate-3 text-primary before:-z-10 lg:before:static lg:text-2xl"
             >
-              Abdul Fikri
+              Front-End Web Developer
             </h1>
-            <h2
-              class="relative text-2xl font-extrabold tracking-wide font-inter md:text-xl before:absolute before:h-1/2 before:w-1/3 before:bg-gradient-to-r before:from-bgprimary before:to-transparent before:rounded before:bottom-0 before:opacity-70 before:-rotate-3 text-primary before:-z-10"
-            >
-              Front-End Developer
-            </h2>
-            <p class="mt-4 font-inter text-slate-600 md:text-xl">
+            <p class="mt-4 text-slate-600 md:text-2xl">
               Informatics Engineering student at Universitas Pamulang and
-              Front-End Web Developer with experience in JavaScript, Bootstrap
-              and Tailwind.
+              Front-End Web Developer with experience in HTML, CSS, JavaScript,
+              Bootstrap, Tailwind CSS, GIT, Github.
             </p>
             <div
-              class="flex items-center justify-between h-32 [&>*>a]:inline-block [&>*>a]:hover: [&>*>a]:p-2 [&>*>a]:rounded-xl [&>*>a]:bg-gradient-to-r [&>*>a]:from-white [&>*>a]:to-slate-300 [&>*>a]:transition [&>*>a]:duration-300 [&>*>a]:ease-in-out [&>*>a>img]:w-8 [&>div:nth-child(2)]:self-end [&>div:nth-child(3)]:self-end mt-2 [&>*>a:hover]:scale-110 [&>*>a:hover]:rotate-12 md:[&>*>a>img]:w-14 md:h-48 px-4"
+              class="flex items-center justify-between h-32 [&>*>a]:inline-block [&>*>a]:hover: [&>*>a]:p-2 [&>*>a]:rounded-xl [&>*>a]:bg-gradient-to-r [&>*>a]:from-white [&>*>a]:to-slate-300 [&>*>a]:transition [&>*>a]:duration-300 [&>*>a]:ease-in-out [&>*>a>img]:w-8 [&>div:nth-child(2)]:self-end [&>div:nth-child(3)]:self-end mt-2 [&>*>a:hover]:scale-110 [&>*>a:hover]:rotate-12 md:[&>*>a>img]:w-14 md:h-48 md:w-3/4 md:mx-auto"
             >
               <div>
                 <a href="https://github.com/fikripapay" target="_blank">
@@ -101,5 +174,8 @@
 
     <!-- Footer Start -->
     <!-- Footer End -->
+
+    <!-- Scripts -->
+    <script src="src/script/script.js"></script>
   </body>
 </html>
